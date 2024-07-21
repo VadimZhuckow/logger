@@ -1,3 +1,37 @@
-2024-07-21T11:51:21.182556+0300 DEBUG debug message (debug)
-2024-07-21T11:51:21.184101+0300 INFO info message (info)
-2024-07-21T11:51:21.184207+0300 ERROR error message (error)
+2024-07-21T12:08:57.619626+0300 DEBUG debug message (debug)
+2024-07-21T12:08:57.620496+0300 DEBUG debug message (debug)
+2024-07-21T12:08:57.620575+0300 DEBUG debug message (debug)
+2024-07-21T12:08:57.620637+0300 DEBUG debug message (debug)
+2024-07-21T12:08:57.620699+0300 DEBUG debug message (debug)
+2024-07-21T12:08:57.620756+0300 DEBUG debug message (debug)
+2024-07-21T12:08:57.620812+0300 DEBUG debug message (debug)
+2024-07-21T12:15:03.828947+0300 ERROR An error has been caught in function '<module>', process 'MainProcess' (68892), thread 'MainThread' (8601424448):
+Traceback (most recent call last):
+
+> File "/Users/nesytylsya/PycharmProjects/logger_test/main.py", line 20, in <module>
+    main()
+    └ <function main at 0x109ba2de0>
+
+  File "/Users/nesytylsya/PycharmProjects/logger_test/main.py", line 17, in main
+    divide(a, b)
+    └ <function divide at 0x109b2d800>
+
+NameError: name 'a' is not defined
+2024-07-21T12:16:15.557799+0300 ERROR An error has been caught in function '<module>', process 'MainProcess' (68919), thread 'MainThread' (8671666752):
+Traceback (most recent call last):
+
+> File "/Users/nesytylsya/PycharmProjects/logger_test/main.py", line 20, in <module>
+    main()
+    └ <function main at 0x10dd52de0>
+
+  File "/Users/nesytylsya/PycharmProjects/logger_test/main.py", line 17, in main
+    divide(1, 0)
+    └ <function divide at 0x10dcdd800>
+
+  File "/Users/nesytylsya/PycharmProjects/logger_test/main.py", line 13, in divide
+    return a / b
+           │   └ 0
+           └ 1
+
+ZeroDivisionError: division by zero
+{"text": "2024-07-21T12:18:17.204337+0300 ERROR An error has been caught in function '<module>', process 'MainProcess' (68948), thread 'MainThread' (8663855680):\nTraceback (most recent call last):\n\n> File \"/Users/nesytylsya/PycharmProjects/logger_test/main.py\", line 20, in <module>\n    main()\n    └ <function main at 0x10d8d6d40>\n\n  File \"/Users/nesytylsya/PycharmProjects/logger_test/main.py\", line 17, in main\n    divide(1, 0)\n    └ <function divide at 0x10d861760>\n\n  File \"/Users/nesytylsya/PycharmProjects/logger_test/main.py\", line 13, in divide\n    return a / b\n           │   └ 0\n           └ 1\n\nZeroDivisionError: division by zero\n", "record": {"elapsed": {"repr": "0:00:00.013125", "seconds": 0.013125}, "exception": {"type": "ZeroDivisionError", "value": "division by zero", "traceback": true}, "extra": {}, "file": {"name": "main.py", "path": "/Users/nesytylsya/PycharmProjects/logger_test/main.py"}, "function": "<module>", "level": {"icon": "❌", "name": "ERROR", "no": 40}, "line": 20, "message": "An error has been caught in function '<module>', process 'MainProcess' (68948), thread 'MainThread' (8663855680):", "module": "main", "name": "__main__", "process": {"id": 68948, "name": "MainProcess"}, "thread": {"id": 8663855680, "name": "MainThread"}, "time": {"repr": "2024-07-21 12:18:17.204337+03:00", "timestamp": 1721553497.204337}}}
