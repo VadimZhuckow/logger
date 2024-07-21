@@ -1,0 +1,3 @@
+2024-07-21T11:51:21.182556+0300 DEBUG debug message (debug)
+2024-07-21T11:51:21.184101+0300 INFO info message (info)
+2024-07-21T11:51:21.184207+0300 ERROR error message (error)
